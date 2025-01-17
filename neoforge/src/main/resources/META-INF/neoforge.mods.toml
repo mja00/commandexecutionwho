@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "commandexecutionwho"
+version = "${version}"
+displayName = "CommandExecutionWho"
+authors = "mja00"
+description = '''
+Disable the nag message about blocks that can cause comment execution
+'''
+#logoFile = ""
+
+[[dependencies.commandexecutionwho]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.commandexecutionwho]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "commandexecutionwho.mixins.json"

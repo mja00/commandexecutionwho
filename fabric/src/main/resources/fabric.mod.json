@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "commandexecutionwho",
+  "version": "${version}",
+  "name": "CommandExecutionWho",
+  "description": "Disable the nag message about blocks that can cause comment execution",
+  "authors": ["mja00"],
+  "contact": {
+    "homepage": ""  },
+  "license": "MIT",
+  "icon": "assets/commandexecutionwho/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.mja00.commandexecutionwho.fabric.CommandexecutionwhoFabric"
+    ],
+    "client": [
+      "dev.mja00.commandexecutionwho.fabric.client.CommandexecutionwhoFabricClient"
+    ]
+  },
+  "mixins": [
+    "commandexecutionwho.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
